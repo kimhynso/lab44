@@ -1,0 +1,24 @@
+#pragma once
+#include ""studentstatus"
+
+namespace kimhynso2549013
+{
+bool comparestudent(const student&s1,const student &s2)
+{
+
+}
+}
+
+int main()
+{
+ using namespace kimhynso2549013;
+ studentstatus s1;
+ s1.print();
+ studentstatus s2{student{1234567,100,'A'},true};
+ s2.print
+
+ if(comparestudent(s1,s2))std::cout<<"same\n";
+ else std::cout<<"not same\n";
+
+return 0;
+}

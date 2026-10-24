@@ -1,0 +1,23 @@
+#pragma once
+#include "student.h"
+
+namespace kimynso2549013
+{
+  class studentstatus
+  student s;
+  bool status;
+  public:
+      studetstatus(student s0=student{1234567,0,'F'},bool st)
+                  :s{s0},status{st}
+                  {}
+      void print()const//student staus
+      {  
+        s.print();
+        if(status)std::cout<<"on school\n";
+        else std::cout<<"not on school\n";
+      }
+      const student&getstudent()const {return s;}
+      void setstudent(student s0){s=s0;}
+   
+} 
+//const 왜 붙이는지 솔직히 모르겠지만 ㅇㅋㅇㅋ
